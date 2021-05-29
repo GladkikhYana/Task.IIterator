@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #b3f8ef;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <ImageView fx:id="Img" fitHeight="277.0" fitWidth="477.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../Images/1.PNG" />
+         </image></ImageView>
+   </center>
+   <bottom>
+      <HBox alignment="TOP_CENTER" prefHeight="51.0" prefWidth="347.0" style="-fx-background-color: #72d5c8;" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #e8b89b; -fx-border-color: #000000;" text="Назад">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <Button mnemonicParsing="false" onAction="#Stop" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #e8b89b; -fx-border-color: #000000;" text="Остановка" />
+            <Button mnemonicParsing="false" onAction="#Start" style="-fx-background-color: #e8b89b;-fx-border-color: #000000;" text="Запуск" />
+            <Button mnemonicParsing="false" onAction="#next" style="-fx-background-color: #e8b89b;-fx-border-color: #000000;" text="Вперед" />
+         </children></HBox>
+   </bottom>
+</BorderPane>
